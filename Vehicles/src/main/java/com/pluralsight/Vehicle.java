@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class Vehicles {
+public class Vehicle {
     private String color;
     private int numberOfPassengers;
     private int cargoCapacity;
@@ -8,6 +8,17 @@ public class Vehicles {
     private boolean hasWheels;
     private boolean onLand;
     private boolean hasDoors;
+
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, boolean hasWheels, boolean onLand,
+            boolean hasDoors) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.hasWheels = hasWheels;
+        this.onLand = onLand;
+        this.hasDoors = hasDoors;
+    }
 
     public String getColor() {
         return color;
